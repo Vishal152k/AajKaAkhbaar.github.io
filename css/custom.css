@@ -1,4 +1,6 @@
-/* Move down content because we have a fixed navbar that is 3.5rem tall */
+html{
+	scroll-behavior: smooth;
+}
 body {
   padding-top: 50px;
   padding-bottom: 30px;
