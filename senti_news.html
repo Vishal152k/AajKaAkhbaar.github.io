@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html ng-app='myApp'>
+	<head>
+		<title> READING EXCEL </title>
+		<meta charset='UTF-8'>
+		<meta name="viewport" content="width=device-width, initial">
+		
+		<script type="text/javascript" src="bs/jquery-3.5.1.min.js"></script>
+		<script type="text/javascript" src="bs/angular.min.js"></script>
+		<script type="text/javascript" src="bs/xlsx.full.min.js"></script>
+		<script type="text/javascript" src="bs/custom2js.js"></script>
+
+		<style type="text/css">
+			table, td{
+				width: 1000px;
+				border: 1px solid black;
+			}
+			th{
+
+				border: 5px solid black;
+			}
+			tr{
+
+				border: 5px solid black;
+				height: 500px;
+			}
+		</style>
+	</head>
+
+	<body ng-controller='MyController'>
+		<div>
+
+			<form enctype="multipart/form-data">
+				<input type="file" id="file">
+				<button type="submit" value="submit" ng-click="uploadExcel()"> Upload File </button>
+
+		</div>
+		<div>
+			<table id="myTable">
+				<thead>
+					<tr>
+						<th>TITLE</th>
+						
+						<th>IMAGE</th>
+					</tr>
+				</thead>
+				<tbody>
+					
+				</tbody>
+			</table>
+	</body>
+
+</html>
