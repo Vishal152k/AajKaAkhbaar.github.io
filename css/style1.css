@@ -85,20 +85,19 @@
     margin-bottom: 10px;
 }
 .wow h1{
-	font-size: 50px;
 	font-size: 25px;
 	padding-bottom: 10px;
 }
 .wow h3{
-	font-size: 25px;
+	font-size: 20px;
 	margin-top: 10px;
 }
 .wow p{
-	font-size: 17px;
+	font-size: 16px;
 }
-.wow h5{
-	font-size: 15px;
-	margin-top: -5px;
+.text-center h5{
+	font-size: 17px;
+	margin: -5px 15px 20px 15px;
 }
 .team-member h4{
 	font-size: 25px;
