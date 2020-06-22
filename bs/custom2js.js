@@ -32,7 +32,7 @@
 
 					link = data.URL;
 
-					$('#myTable tbody:last-child').append("<tr><td>"+str.link(link)+"</td><td>"+"<img src = 'data.IMAGE'>"+"</td></tr>");
+					$('#myTable tbody:last-child').append("<tr><td>"+str.link(link)+"</td><td>"+'<img src="' + img_URL + '" height="250px" width="250px">'+"</td></tr>");
 
 				}
 
