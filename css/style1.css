@@ -32,20 +32,12 @@
     margin-bottom: 4rem;
 }
 
-
-
-.dropdown {
-  display: inline-block;
-  cursor: pointer;
-  padding: 0px
-}
-
 .bar1, .bar2, .bar3 {
   width: 35px;
   height: 5px;
   background-color: white;
   margin: 6px 0;
-  transition: 0.4s;
+  transition: 0.2s;
 }
 
 /* Rotate first bar */
@@ -74,9 +66,6 @@
     margin-top: 0;
     margin-bottom: 1rem;
 }
-.navbar h2{
-	font-size: 20px;
-}
 .container a{
 	border-radius: 10px;
     font-size: 20px;
@@ -99,18 +88,11 @@
 	font-size: 17px;
 	margin: -5px 15px 20px 15px;
 }
+}
 .team-member h4{
 	font-size: 25px;
 	margin-top: 10px;
 }
 
 }
-@media (max-width: 991){
-.navbar h2{
-	font-size: 20px;
-}
 
-}
-@media (max-width: 1199){
-	
-}
