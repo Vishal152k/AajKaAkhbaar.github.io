@@ -34,104 +34,27 @@
 <meta name="msapplication-config" content="/docs/4.5/assets/img/favicons/browserconfig.xml">
 <meta name="theme-color" content="#563d7c">
 
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
-
-    <style >
-      .button{
-        border-radius: 200px
-      }
-
-    </style>
     
   </head>
-  <body id="page-top">
-    <div class="container">
-     <nav class="navbar navbar-expand-md navbar-dark fixed-top btn-warning" style="background-color: rgb(255,200,30);" id="myTopnav" >
-    <h2 style="color: white; font-family: 'Arvo', serif;"> Aaj Ka Akhbaar </h2>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item ">
-        <a style="background-color: rgb(255,200,30);color: white; font-size: 120%;font-family: 'Arvo', serif;" class="button1 btn" href="#who-we-are">Who We Are <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item ">
-        <a style="background-color: rgb(255,200,30); color:white;font-size: 120%;font-family: 'Arvo', serif;" class="button1 btn" href="#">About The Project </a>
-      </li>
-  
-      <!--div class="dropdown">
-  <button class="btn btn-warning dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
-    Ok
-  </button>
-  <div class="dropdown-menu" aria-labelledby="dropdownMenu">
-    <button class="dropdown-item" type="button">Action</button>
-    <button class="dropdown-item" type="button">Another action</button>
-    <button class="dropdown-item" type="button">Something else here</button>
-  </div>
-</div-->
-<li class="nav-item">
-<div class="dropdown drops">
-  <div onclick="myFunction(this);fnc()" class="dropbtn">
-  <div class="bar1"></div>
-  <div class="bar2"></div>
-  <div class="bar3"></div>
-</div>
-<div id="myDropdown" class="dropdown-content">
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-  </div>
+  <body >
+    <div class="topnav" id="myTopnav" style="">
+  <a href="index22June.html" style="font-size: 28px" >Aaj Ka Akhbaar</a>
+  <a href="#intro">About the Project</a>
+  <a href="#who-we-are">Who We Are</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fas fa-bars"></i>
+  </a>
 </div>
 <script>
-function fnc()
-{
-  document.getElementById("myDropdown").classList.toggle("show");
-}
-function myFunction(x) {
-  x.classList.toggle("change");
-}
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
   }
 }
 </script>
-</li>
-    </ul>
-  </div>
-</nav >
-</div>
-
-<!--div class="topnav">
-  <a class="active" href="#home">Home</a>
-  <a href="#news">News</a>
-  <a href="#contact">Contact</a>
-  <a href="#about">About</a>
-</div -->
 
 <main role="main">
 
@@ -140,7 +63,7 @@ window.onclick = function(event) {
   <div class="container">
       <!--h1 class="display-3">Hi there!</h1-->
       <center>
-      <p><a class="button1 btn" style="border-radius: 22px" href="senti_news.html" role="button">Positive news &raquo;</a> 
+      <p><a class="button1 btn" style="border-radius: 22px" href="#" role="button">Positive news &raquo;</a> 
         <a class="button1 btn" style="border-radius: 22px; background-color: red" href="https://leaf-scrutiny-department.github.io/index.html#introduction" role="button">Negative news &raquo;</a><br><br>
       </p>
     </center>
@@ -150,8 +73,8 @@ window.onclick = function(event) {
   <div class="wow">
     <center>
 
-      <h1><strong>INTRODUCTION</strong></h1>
-       <hr style="border-top:1px solid rgb(255,200,30);  width: 250px; margin: 8px auto">
+     <div id="intro"> <h1><strong>INTRODUCTION</strong></h1></div>
+      <hr style="border-top:1px solid rgb(255,200,30);  width: 250px; margin: 8px auto">
     <div class="row">
       <div class="col-md-6">
         <span class="fa-stack fa-2x" style="font-size: 3em; color: gold ">
@@ -172,46 +95,42 @@ window.onclick = function(event) {
   </div>
 </center>
   </div>
-  
-
         <!-- About us-->
-        <section class="page-section bg-light" id="about-us">
+        <section class="page-section bg-light" >
             <div class="container" style="background-color: rgb(220,220,220);">
                 <div class="text-center">
-                  <div id="who-we-are">
-                    <h1 class="section-heading text-uppercase" style="font-family:'Arvo', serif">Team Kya?</h1>
-                    <h5 class="section-subheading text-muted" style="font-family: 'MuseoModerno', cursive;">We are undergraduate students of IIT Bombay & this is our Institute Technical Summer Project.</h5>
+                    <div id="who-we-are"> <h1 class="section-heading text-uppercase" style="font-family:'Arvo', serif">Team Kya?</h1>
+                    <h5 class="section-subheading text-muted" style="font-family: 'MuseoModerno', cursive;">We are undergraduate students of IIT Bombay & this is our Institute Technical Summer Project.</h5></div>
                 </div>
                 <div class="row">
                     <div class="col-lg-3">
                         <div class="team-member">
                             <img class="mx-auto rounded-circle" src="images/vishalsriv.jpeg" alt="Vishal" />
                             <h4>Vishal Srivastava</h4>
-                            <a class="btn btn-dark btn-social mx-2" href="mailto:vishal.srivastava.15.2k@gmail.com"><i class="fas fa-envelope"></i></a><a class="btn btn-dark btn-social mx-2" href="https://github.com/Vishal152k"><i class="fab fa-github"></i></a><a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/vishal-srivastava-b721b5191"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btnX" href="mailto:vishal.srivastava.15.2k@gmail.com"><i class="fab fa-google"></i></a><a class="btnX" href="https://github.com/Vishal152k"><i class="fab fa-github"></i></a><a class="btnX" href="https://www.linkedin.com/in/vishal-srivastava-b721b5191"><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-3">
                         <div class="team-member">
                             <img class="mx-auto rounded-circle" src="images/shreyam1.jpeg" alt="Shreyam" />
                             <h4>Shreyam Mishra</h4>
-                            <a class="btn btn-dark btn-social mx-2" href="mailto:mishra.shreyam23@gmail.com"><i class="fas fa-envelope"></i></a><a class="btn btn-dark btn-social mx-2" href="https://github.com/ShreyamMishra"><i class="fab fa-github"></i></a><a class="btn btn-dark btn-social mx-2" href="https://lichess.org/@/UsedUsername"><i class="fas fa-chess"></i></a>
+                            <a class="btnX" href="mailto:mishra.shreyam23@gmail.com"><i class="fab fa-google"></i></a><a class="btnX" href="https://github.com/ShreyamMishra"><i class="fab fa-github"></i></a><a class="btnX" href="https://lichess.org/@/UsedUsername"><i class="fas fa-chess"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-3">
                         <div class="team-member">
                             <img class="mx-auto rounded-circle" src="images/vishesh1.jpeg" alt="Vishesh" />
                             <h4>Vishesh Agarwal</h4>
-                            <a class="btn btn-dark btn-social mx-2" href="mailto:visheshagarwal2001@gmail.com"><i class="fas fa-envelope"></i></a><a class="btn btn-dark btn-social mx-2" href="https://github.com/Vishesh2k01"><i class="fab fa-github"></i></a><a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/vishesh-agarwal-775b44192/"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btnX" href="mailto:visheshagarwal2001@gmail.com"><i class="fab fa-google"></i></a><a class="btnX" href="https://github.com/Vishesh2k01"><i class="fab fa-github"></i></a><a class="btnX" href="https://www.linkedin.com/in/vishesh-agarwal-775b44192/"><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-3">
                         <div class="team-member">
                             <img class="mx-auto rounded-circle" src="images/rahul1.jpeg" alt="Rahul" />
                             <h4>Rahul Kumawat</h4>
-                            <a class="btn btn-dark btn-social mx-2" href="mailto:rahulhna02@gmail.com"><i class="fas fa-envelope"></i></a><a class="btn btn-dark btn-social mx-2" href="https://github.com/rhna222"><i class="fab fa-github"></i></a><a class="btn btn-dark btn-social mx-2" href="http://www.linkedin.com/in/rahul-kumawat-64649b192"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btnX" href="mailto:rahulhna02@gmail.com"><i class="fab fa-google"></i></a><a class="btnX" href="https://github.com/rhna222"><i class="fab fa-github"></i></a><a class="btnX" href="http://www.linkedin.com/in/rahul-kumawat-64649b192"><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
-                  </div>
     </div>
             </div>
         </section>
@@ -221,7 +140,7 @@ window.onclick = function(event) {
 
 <footer class="container">
   <p>&copy; Team Kya?</p>
-  <img alt="shorcut icon" src="favicon/favicon-32x32.png" type="image/png" >
+  <a href="https://www.facebook.com/itsp.iitb/"><img alt="shorcut icon" src="favicon/favicon-32x32.png" type="image/png"></a> 
 </footer>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
       <script>window.jQuery || document.write('<script src="/docs/4.5/assets/js/vendor/jquery.slim.min.js"><\/script>')</script>
