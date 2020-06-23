@@ -12,7 +12,57 @@
 
 		<style type="text/css">
 			div {
- 			
+ 			<!DOCTYPE html>
+<html ng-app='myApp'>
+	<head>
+		<title> READING EXCEL </title>
+		<meta charset='UTF-8'>
+		<meta name="viewport" content="width=device-width, initial">
+		
+		<script type="text/javascript" src="bs/jquery-3.5.1.min.js"></script>
+		<script type="text/javascript" src="bs/angular.min.js"></script>
+		<script type="text/javascript" src="bs/xlsx.full.min.js"></script>
+		<script type="text/javascript" src="bs/abcjs.js"></script>
+
+		<style type="text/css">
+			div {
+ 			background-image: url('pos_img.jpg');
+ 			background-repeat: no-repeat;
+  			background-attachment: fixed;
+  			background-size: 50% 100%;
+		}
+			.card {
+				margin-left: 50%; 
+ 				box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+  				transition: 0.3s;
+  				width: 50%;
+			}
+
+			.card:hover {	
+  				box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+			}
+
+			.container {
+  				padding: 2px 16px;
+			}
+		</style>
+	</head>
+
+	<body ng-controller='MyController'>
+		<div>
+
+			<form enctype="multipart/form-data">
+				<input type="file" id="file">
+				<button value="submit" id="upload_button" ng-click="uploadExcel()"> Upload File </button>
+
+		</div>
+		<div id="myTable">
+			
+		</div>
+			
+	</body>
+
+</html>
  			background-repeat: no-repeat;
   			background-attachment: fixed;
   			background-size: 50% 100%;
