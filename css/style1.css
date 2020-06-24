@@ -76,11 +76,11 @@
 .wow h1{
 	font-size: 25px;
 	padding-bottom: 10px;
+	letter-spacing:6px;
 }
 .wow h3{
 	font-size: 20px;
 	margin-top: 10px;
-	letter-spacing:6px;
 }
 
 .text-center h5{
