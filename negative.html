@@ -2,16 +2,12 @@
 <html>
 	<head>
 		<title> Negative News </title>
+		 <link rel="icon" type="image/icon" href="images/newspaper.webp">
+
 		<meta charset='UTF-8'>
 		<meta name="viewport" content="width=device-width, initial">
 
 		<style type="text/css">
-			div {
- 			background-image: url('pos_img.jpg');
- 			background-repeat: no-repeat;
-  			background-attachment: fixed;
-  			background-size: 50% 100%;
-		}
 			.card {
 				margin-left: 50%; 
  				box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
@@ -27,9 +23,101 @@
   				padding: 2px 16px;
 			}
 		</style>
+
+<style type="text/css">
+			html,body{
+ 			background-image: url('images/logo3.jpg') ;
+ 			background-repeat: repeat ;
+  			background-attachment: fixed;
+  			background-size: 100% 100%;
+  			background-position:  center;
+  			background-blend-mode: multiply;
+  		
+		}
+			.card {
+				margin-left: 50%; 
+ 				box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+  				transition: 0.3s;
+  				width: 50%;
+			}
+
+			.card:hover {	
+  				box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+			}
+
+			.container {
+  				padding: 2px 16px;
+  			}
+
+  		.sticky {
+		  position: fixed;
+		  top: 0;
+		  width: 100%;
+		  z-index: 1;
+		}
+		.sticky + .content {
+		  padding-top: 60px;
+
+		}
+		</style>
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/jumbotron/">
+    <link rel="icon" type="image/icon" href="images/newspaper.webp">
+
+    <!-- Arvo & misc. font from Google fonts and font awesome-->
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+     <script src="https://kit.fontawesome.com/65a732dfab.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+ <!-- Custom styles for this template -->
+    <link href="css/custom.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/navi.css">
+    <link rel="stylesheet" type="text/css" href="css/style1.css">
+
+    <!-- Favicons -->
+<meta name="msapplication-config" content="/docs/4.5/assets/img/favicons/browserconfig.xml">
+<meta name="theme-color" content="#563d7c">
+
 	</head>
 
 	<body>
+
+		<div class="topnav" id="myTopnav" >
+  <a href="index.html" style="font-size: 28px" >Aaj Ka Akhbaar</a>
+  <a href="positive.html">Positive News</a>
+  <a href="index.html#intro">About the Project</a>
+  <a href="index.html#who-we-are">Who We Are</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fas fa-bars"></i>
+  </a>
+  <script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+<script>
+window.onscroll = function() {myFunctionT()};
+
+function myFunctionT() {
+    myTopnav.classList.add("sticky")
+}
+
+</script>
+</div>
+
+
+
 		<div id="myTable">
 			
 		<div class="card"><a href="https://www.cnn.com/2020/06/22/us/usc-lineman-dead-spt-trnd/index.html" target="_blank"><img src="https://cdn.cnn.com/cnnnext/dam/assets/200622001535-usc-lineman-dead-trnd-restricted-super-tease.jpg" alt="Avatar" style="width:100%;"></a><a href="https://www.cnn.com/2020/06/22/us/usc-lineman-dead-spt-trnd/index.html" target="_blank"><p style="font-size:30px;font-style:italic;">A former USC offensive lineman died at age 26 while hiking with family - CNN</p></a>Max Tuerk, a former offensive lineman for the Univ...<a href="https://www.cnn.com/2020/06/22/us/usc-lineman-dead-spt-trnd/index.html" target="_blank">read more</a></div><br><div class="card"><a href="https://qz.com/india/1871164/india-china-clash-will-end-up-hurting-trade-ties-economies/" target="_blank"><img src="https://cms.qz.com/wp-content/uploads/2020/06/RTS3C73Q-e1592558898160.jpg?quality=75&amp;strip=all&amp;w=1400" alt="Avatar" style="width:100%;"></a><a href="https://qz.com/india/1871164/india-china-clash-will-end-up-hurting-trade-ties-economies/" target="_blank"><p style="font-size:30px;font-style:italic;">India-China clash will end up hurting trade ties, economies - Quartz India</p></a>Also, India is a big market for Chinese producers....<a href="https://qz.com/india/1871164/india-china-clash-will-end-up-hurting-trade-ties-economies/" target="_blank">read more</a></div><br><div class="card"><a href="https://www.inquirer.com/eagles/dallas-goedert-sucker-punched-south-dakota-zoo-bar-eagles-20200621.html" target="_blank"><img src="https://www.inquirer.com/resizer/Ks-1rveXJLQuGKkbR5MUz_HZtvg=/1200x0/center/middle/www.inquirer.com/resizer/JfVdjNLXfyTvXlomDNX3hhxLwhc=/1200x0/center/middle/cloudfront-us-east-1.images.arcpublishing.com/pmn/QQMTM6QU3FGRPDC572FEUFLSIU.jpg" alt="Avatar" style="width:100%;"></a><a href="https://www.inquirer.com/eagles/dallas-goedert-sucker-punched-south-dakota-zoo-bar-eagles-20200621.html" target="_blank"><p style="font-size:30px;font-style:italic;">Video shows Eagles’ Dallas Goedert apparently being sucker-punched in South Dakota bar - The Philadelphia Inquirer</p></a>Sources said an arrest has been made in the incide...<a href="https://www.inquirer.com/eagles/dallas-goedert-sucker-punched-south-dakota-zoo-bar-eagles-20200621.html" target="_blank">read more</a></div><br><div class="card"><a href="https://www.reuters.com/article/us-northkorea-southkorea-leaflets-idUSKBN23R01L" target="_blank"><img src="https://s2.reutersmedia.net/resources/r/?m=02&amp;d=20200620&amp;t=2&amp;i=1522908221&amp;w=1200&amp;r=LYNXMPEG5J064" alt="Avatar" style="width:100%;"></a><a href="https://www.reuters.com/article/us-northkorea-southkorea-leaflets-idUSKBN23R01L" target="_blank"><p style="font-size:30px;font-style:italic;">North Korea prepares anti-South leaflets amid heightened tensions - Reuters</p></a>North Korea is gearing up to send propaganda leafl...<a href="https://www.reuters.com/article/us-northkorea-southkorea-leaflets-idUSKBN23R01L" target="_blank">read more</a></div><br><div class="card"><a href="https://www.youtube.com/watch?v=M_9huafSfeE" target="_blank"><img src="https://i.ytimg.com/vi/M_9huafSfeE/maxresdefault.jpg" alt="Avatar" style="width:100%;"></a><a href="https://www.youtube.com/watch?v=M_9huafSfeE" target="_blank"><p style="font-size:30px;font-style:italic;">WHO officials warn 'pandemic is accelerating' - ABC News</p></a>The coronavirus pandemic has entered a “new and da...<a href="https://www.youtube.com/watch?v=M_9huafSfeE" target="_blank">read more</a></div><br><div class="card"><a href="https://www.cnn.com/2020/06/19/us/clemson-players-test-positive-for-coronavirus-trnd/index.html" target="_blank"><img src="https://cdn.cnn.com/cnnnext/dam/assets/200113201208-02-clemson-lsu-super-tease.jpg" alt="Avatar" style="width:100%;"></a><a href="https://www.cnn.com/2020/06/19/us/clemson-players-test-positive-for-coronavirus-trnd/index.html" target="_blank"><p style="font-size:30px;font-style:italic;">23 Clemson football players test positive for coronavirus - CNN</p></a>At least 28 Clemson University athletes and staff ...<a href="https://www.cnn.com/2020/06/19/us/clemson-players-test-positive-for-coronavirus-trnd/index.html" target="_blank">read more</a></div><br><div class="card"><a href="https://www.foxnews.com/media/jessica-tarlov-trump-campaign-reckless-tulsa-rally" target="_blank"><img src="https://static.foxnews.com/foxnews.com/content/uploads/2020/06/4392636a-image.jpg" alt="Avatar" style="width:100%;"></a><a href="https://www.foxnews.com/media/jessica-tarlov-trump-campaign-reckless-tulsa-rally" target="_blank"><p style="font-size:30px;font-style:italic;">Jessica Tarlov slams Trump campaign over 'reckless' Tulsa rally: 'This is not the time to do it' - Fox News</p></a>Fox News contributor Jessica Tarlov criticized Pre...<a href="https://www.foxnews.com/media/jessica-tarlov-trump-campaign-reckless-tulsa-rally" target="_blank">read more</a></div><br><div class="card"><a href="https://www.boston.com/culture/movies/2020/06/19/amc-theaters-reverses-course-on-masks-after-backlash" target="_blank"><img src="https://www.boston.com/wp-content/uploads/2020/06/amc-850x478.jpg" alt="Avatar" style="width:100%;"></a><a href="https://www.boston.com/culture/movies/2020/06/19/amc-theaters-reverses-course-on-masks-after-backlash" target="_blank"><p style="font-size:30px;font-style:italic;">AMC Theaters reverses course on masks after backlash - Boston.com</p></a>“It is clear from this response that we did not go...<a href="https://www.boston.com/culture/movies/2020/06/19/amc-theaters-reverses-course-on-masks-after-backlash" target="_blank">read more</a></div><br><div class="card"><a href="https://www.barrons.com/articles/dow-jones-industrial-average-fell-coronavirus-shut-down-apple-stores-again-51592601131" target="_blank"><img src="https://images.barrons.com/im-150383/social" alt="Avatar" style="width:100%;"></a><a href="https://www.barrons.com/articles/dow-jones-industrial-average-fell-coronavirus-shut-down-apple-stores-again-51592601131" target="_blank"><p style="font-size:30px;font-style:italic;">Dow Jones Industrial Average Fell as Coronavirus Shut Down Apple Stores Again - Barron's</p></a>undefined<a href="https://www.barrons.com/articles/dow-jones-industrial-average-fell-coronavirus-shut-down-apple-stores-again-51592601131" target="_blank">read more</a></div><br><div class="card"><a href="https://www.usatoday.com/story/sports/nba/columnist/jeff-zillgitt/2020/06/19/coronavirus-florida-covid-19-cases-rising-nba-return/3225237001/" target="_blank"><img src="https://www.gannett-cdn.com/presto/2020/06/19/USAT/8d39257f-0595-4a47-8fa0-11f4793122db-AP_Virus_Outbreaks_NBA_Basketball.jpg?crop=3717,2091,x0,y57&amp;width=3200&amp;height=1680&amp;fit=bounds" alt="Avatar" style="width:100%;"></a><a href="https://www.usatoday.com/story/sports/nba/columnist/jeff-zillgitt/2020/06/19/coronavirus-florida-covid-19-cases-rising-nba-return/3225237001/" target="_blank"><p style="font-size:30px;font-style:italic;">Florida's rising coronavirus cases complicating NBA's plans to resume season in Orlando - USA TODAY</p></a>The rising number of positive COVID-19 cases in Fl...<a href="https://www.usatoday.com/story/sports/nba/columnist/jeff-zillgitt/2020/06/19/coronavirus-florida-covid-19-cases-rising-nba-return/3225237001/" target="_blank">read more</a></div><br><div class="card"><a href="https://www.cnbc.com/2020/06/22/wirecard-says-missing-2-billion-likely-doesnt-exist-shares-crash.html" target="_blank"><img src="https://image.cnbcfm.com/api/v1/image/106585706-1592651451530gettyimages-1221074854.jpeg?v=1592652041" alt="Avatar" style="width:100%;"></a><a href="https://www.cnbc.com/2020/06/22/wirecard-says-missing-2-billion-likely-doesnt-exist-shares-crash.html" target="_blank"><p style="font-size:30px;font-style:italic;">Wirecard shares crash again after payments firm says missing $2 billion likely doesn't exist - CNBC</p></a>Wirecard said it was assessing the "prevailing lik...<a href="https://www.cnbc.com/2020/06/22/wirecard-says-missing-2-billion-likely-doesnt-exist-shares-crash.html" target="_blank">read more</a></div><br><div class="card"><a href="https://www.inquirer.com/news/ritchie-london-terrorist-police-stabbed-to-death-northeast-philadelphia-20200621.html" target="_blank"><img src="https://www.inquirer.com/resizer/n6hVW6rPpyhMsJZmlbW65Kz72To=/1200x0/center/middle/www.inquirer.com/resizer/sn8__XtCaEtpMxDQ6zGBMvNtrXE=/1200x0/center/middle/cloudfront-us-east-1.images.arcpublishing.com/pmn/HLOPGITCTZHHZNTHAZDXE2VITA.jpg" alt="Avatar" style="width:100%;"></a><a href="https://www.inquirer.com/news/ritchie-london-terrorist-police-stabbed-to-death-northeast-philadelphia-20200621.html" target="_blank"><p style="font-size:30px;font-style:italic;">Northeast Philadelphia native, brother of police captain, killed in British terrorist attack - The Philadelphia Inquirer</p></a>The victim grew up in Mayfair and moved to England...<a href="https://www.inquirer.com/news/ritchie-london-terrorist-police-stabbed-to-death-northeast-philadelphia-20200621.html" target="_blank">read more</a></div><br><div class="card"><a href="https://www.foxnews.com/us/2-dead-7-wounded-nc-shooting-block-party-police" target="_blank"><img src="https://static.foxnews.com/foxnews.com/content/uploads/2020/04/Untitled-2.png" alt="Avatar" style="width:100%;"></a><a href="https://www.foxnews.com/us/2-dead-7-wounded-nc-shooting-block-party-police" target="_blank"><p style="font-size:30px;font-style:italic;">North Carolina shooting: 2 dead, 7 wounded at block party - Fox News</p></a>Two people were killed and seven others were wound...<a href="https://www.foxnews.com/us/2-dead-7-wounded-nc-shooting-block-party-police" target="_blank">read more</a></div><br><div class="card"><a href="https://www.reuters.com/article/us-health-coronavirus-southkorea-idUSKBN23T10M" target="_blank"><img src="https://s3.reutersmedia.net/resources/r/?m=02&amp;d=20200622&amp;t=2&amp;i=1523040657&amp;w=1200&amp;r=LYNXMPEG5L0K7" alt="Avatar" style="width:100%;"></a><a href="https://www.reuters.com/article/us-health-coronavirus-southkorea-idUSKBN23T10M" target="_blank"><p style="font-size:30px;font-style:italic;">South Korea says it is battling 'second wave' of coronavirus - Reuters</p></a>Health authorities in South Korea said for the fir...<a href="https://www.reuters.com/article/us-health-coronavirus-southkorea-idUSKBN23T10M" target="_blank">read more</a></div><br><div class="card"><a href="https://finance.yahoo.com/news/u-index-futures-fall-increasing-224818939.html" target="_blank"><img src="https://s.yimg.com/uu/api/res/1.2/9jWofmWv.vIa9zvTwLAXaw--~B/aD0xMzM0O3c9MjAwMDtzbT0xO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/bloomberg_markets_842/1a0540e530d64f1ca5b3d64840da77b1" alt="Avatar" style="width:100%;"></a><a href="https://finance.yahoo.com/news/u-index-futures-fall-increasing-224818939.html" target="_blank"><p style="font-size:30px;font-style:italic;">U.S. Index Futures Fluctuate as Investors Assess Virus Count - Yahoo Finance</p></a>(Bloomberg) -- U.S. stock index futures fluctuated...<a href="https://finance.yahoo.com/news/u-index-futures-fall-increasing-224818939.html" target="_blank">read more</a></div><br><div class="card"><a href="https://www.nytimes.com/2020/06/21/arts/design/roosevelt-statue-to-be-removed-from-museum-of-natural-history.html" target="_blank"><img src="https://static01.nyt.com/images/2020/06/22/arts/22statue3/22statue3-facebookJumbo-v2.jpg" alt="Avatar" style="width:100%;"></a><a href="https://www.nytimes.com/2020/06/21/arts/design/roosevelt-statue-to-be-removed-from-museum-of-natural-history.html" target="_blank"><p style="font-size:30px;font-style:italic;">Roosevelt Statue to Be Removed From Museum of Natural History - The New York Times</p></a>The equestrian memorial to Theodore Roosevelt has ...<a href="https://www.nytimes.com/2020/06/21/arts/design/roosevelt-statue-to-be-removed-from-museum-of-natural-history.html" target="_blank">read more</a></div><br><div class="card"><a href="https://deadline.com/2020/06/john-bolton-donald-trump-abc-news-2-1202965548/" target="_blank"><img src="https://pmcdeadline2.files.wordpress.com/2019/09/john-bolton.jpg?w=1024" alt="Avatar" style="width:100%;"></a><a href="https://deadline.com/2020/06/john-bolton-donald-trump-abc-news-2-1202965548/" target="_blank"><p style="font-size:30px;font-style:italic;">John Bolton Scorches Donald Trump In ABC Interview, But Gives Puzzling Answer To A Key Question: Why Not Speak Up Earlier? - Deadline</p></a>ABC News devoted a primetime hour to an exclusive ...<a href="https://deadline.com/2020/06/john-bolton-donald-trump-abc-news-2-1202965548/" target="_blank">read more</a></div><br></div>
