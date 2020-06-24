@@ -94,23 +94,26 @@ function myFunction() {
     <center>
 
      <div id="intro"> <h1><strong>INTRODUCTION</strong></h1></div>
-      <hr style="border-top:1px solid rgb(255,200,30);  width: 250px; margin: 8px auto">
+      <hr style="border-top:1px solid rgb(255,200,30);  width:300px; margin: 8px auto">
     <div class="row">
       <div class="col-md-6">
-        <span class="fa-stack fa-2x" style="font-size: 3em; color: gold ">
+        <span class="fa-stack fa-2x" style="font-size: 3em; color: gold;margin-top: 10px; ">
   <i class="fas fa-circle fa-stack-2x"></i>
   <i class="fas fa-book-open fa-stack-1x fa-inverse"></i>
 </span>
-      <h3> About the project</h3>
-      <p> This is something. </p>
+      <h3 style="margin:10px 0px; "> About the project</h3>
+      <img src="images/senti.png" alt="Sentiment" style="height:55%">
+      <p style="margin:0px 30px -250px 30px;font-family: 'Droid Serif';font-size: 18px;"> After collecting news headlines and their description from the News API, our model conducts sentiment analysis and outputs a numeric score based on which it classifies an article as positive or negative news. </p>
       </div>
          <div class="col-md-6">
-          <span class="fa-stack fa-2x" style="font-size: 3em; color: darkmagenta ">
+          <span class="fa-stack fa-2x" style="font-size: 3em; color: darkmagenta; margin-top: 15px 0px; " >
   <i class="fas fa-circle fa-stack-2x"></i>
   <i class="fas fa-brain fa-stack-1x fa-inverse"></i>
 </span>
-      <h3> Machine Learning & CNN</h3>
-      <p> We'll write something.</p>
+      <h3> How it works</h3>
+      <p style="font-family:'Droid Serif';font-size:18px;margin:20px 30px 50px 30px;"> Our model predicts the sentiment of a news article based on the title and description collected using the News API. Once the above strings are collected they undergo ‘pre-processing’. This includes removal of extra links, additional characters, random spaces among others. Any redundant feature that does not contribute to the sentiment of our article is hopefully removed at this stage.<br><br>
+The pre-processed string then undergoes a series of mathematical transformations, beginning with every word of the string being encoded by a dense vector representation. This is used to keep track of every word with respect to the vocabulary. Following this every encoded word is mapped to a higher ‘n’ – dimensional vector space using what are known as ‘word embeddings’. This allows contextual relation between words and computational ease. After each word has been mapped to a vector, our string is padded to a certain length. While this is not strictly necessary, heuristically padding strings have proved to give better result Now our string is ready to be fed to our deep-learning based LSTM model! Based on training data, the model outputs a score ranging from [0,1], with 0 denoting absolute negative. Contrastingly, 1 is absolute positive. Based on the sentiment score for each article based on both the title and its description, we classify it as positive or negative news.
+</p>
     </div>
   </div>
 </center>
