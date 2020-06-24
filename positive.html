@@ -10,8 +10,7 @@
 		<meta name="theme-color" content="#563d7c">
 
 		
-		<style type="text/css">
-			
+	<style type="text/css">
 			.card {
 				margin-left: 50%; 
  				box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
@@ -23,47 +22,74 @@
   				box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
 			}
 
+			.card p{
+			font-size:25px;
+		}
+
 			.container {
   				padding: 2px 16px;
 			}
 		</style>
 
-		<style type="text/css">
+<style type="text/css">
 			html,body{
- 			background-image: url('images/logo3.jpg') ;
- 			background-repeat: repeat ;
+ 			background-image: url('images/news2.jpg') ;
+ 			background-repeat: no-repeat ;
   			background-attachment: fixed;
-  			background-size: 100% 100%;
-  			background-position:  center;
+  			background-size: cover;
+  			background-position: center center;
   			background-blend-mode: multiply;
   		
-		}
-			.card {
-				margin-left: 50%; 
- 				box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
-  				transition: 0.3s;
-  				width: 50%;
-			}
-
-			.card:hover {	
-  				box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
-			}
-
-			.container {
-  				padding: 2px 16px;
-  			}
-
-  		.sticky {
-		  position: fixed;
-		  top: 0;
-		  width: 100%;
-		  z-index: 1;
-		}
-		.sticky + .content {
-		  padding-top: 60px;
-
-		}
+		}	
 		</style>
+
+		<style type="text/css"> 
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 50%;
+  background-color: transparent;
+  position: fixed;
+  height: auto;
+  overflow: auto;
+  
+  
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+  font-family:'Arvo',serif;
+  font-size:25px;
+  font-weight: 900;
+  transition-duration:0.2s;
+}
+
+.sidebar a:hover {
+  color: rgb(90,90,90);
+  font-size:24px;
+    text-decoration: none;
+  
+}
+
+@media screen and (max-width: 700px) {
+	.card p{
+				font-size: 20px;
+			}
+  .sidebar a {
+  	width: auto%;
+    font-size: 20px; margin:20px 2px; padding: 0px;  color: rgb(0,0,100);
+    float: none;
+  }
+  .sidebar{
+  	width:100%;
+  }
+}
+
+	</style>
+
     <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/jumbotron/">
     <link rel="icon" type="image/icon" href="images/newspaper.webp">
 
@@ -88,40 +114,20 @@
 <meta name="msapplication-config" content="/docs/4.5/assets/img/favicons/browserconfig.xml">
 <meta name="theme-color" content="#563d7c">
 
+
 	</head>
 
 	<body>
-		<div id="myTable">
 
-			<div class="topnav" id="myTopnav" >
-  <a href="index.html" style="font-size: 28px" >Aaj Ka Akhbaar</a>
-  <a href="negative.html">Negative News</a>
-  <a href="index.html#intro">About the Project</a>
+	<div class="sidebar">
+  <a href="index.html">Aaj Ka Akhbaar</a>
   <a href="index.html#who-we-are">Who We Are</a>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fas fa-bars"></i>
-  </a>
-  <script>
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-</script>
-<script>
-window.onscroll = function() {myFunctionT()};
-
-function myFunctionT() {
-    myTopnav.classList.add("sticky")
-}
-
-</script>
+  <a href="index.html#intro">About the project</a>
+  <a href="negative.html">Negative News</a>
 </div>
+
 			
-		<div class="card"><a href="https://www.pcworld.com/article/3563417/asus-rog-zephyrus-duo-15-gx550-review-two-screens-and-a-whole-lot-of-speed.html" target="_blank"><img src="https://images.idgesg.net/images/article/2020/06/zephyrus_2-100849429-large.3x2.jpg" alt="Avatar" style="width:100%;"></a><a href="https://www.pcworld.com/article/3563417/asus-rog-zephyrus-duo-15-gx550-review-two-screens-and-a-whole-lot-of-speed.html" target="_blank"><p style="font-size:30px;font-style:italic;">Asus ROG Zephyrus Duo 15 GX550 review: Two screens and a whole lot of speed - PCWorld</p></a>The Asus ROG Zephyrus Duo 15 GX550 is a dual-scree...<a href="https://www.pcworld.com/article/3563417/asus-rog-zephyrus-duo-15-gx550-review-two-screens-and-a-whole-lot-of-speed.html" target="_blank">read more</a></div><br><div class="card"><a href="https://www.billboard.com/articles/columns/pop/9406412/global-goal-unite-for-our-future-concert-lineup" target="_blank"><img src="https://static.billboard.com/files/2020/05/Miley-Cyrus-2020-Fashion-ndk-Billboard-1548-1588971221-1024x677.jpg" alt="Avatar" style="width:100%;"></a><a href="https://www.billboard.com/articles/columns/pop/9406412/global-goal-unite-for-our-future-concert-lineup" target="_blank"><p style="font-size:30px;font-style:italic;">Miley Cyrus, Shakira, Justin Bieber &amp; More to Perform at 'Global Goal: Unite for Our Future' Concert - Billboard</p></a>undefined<a href="https://www.billboard.com/articles/columns/pop/9406412/global-goal-unite-for-our-future-concert-lineup" target="_blank">read more</a></div><br><div class="card"><a href="https://www.nbcnews.com/news/us-news/bags-human-remains-discovered-along-seattle-shore-n1231630" target="_blank"><img src="https://media4.s-nbcnews.com/j/newscms/2019_01/2705191/nbc-social-default_b6fa4fef0d31ca7e8bc7ff6d117ca9f4.nbcnews-fp-1200-630.png" alt="Avatar" style="width:100%;"></a><a href="https://www.nbcnews.com/news/us-news/bags-human-remains-discovered-along-seattle-shore-n1231630" target="_blank"><p style="font-size:30px;font-style:italic;">Bags with human remains discovered along Seattle shore - NBC News</p></a>Bags of human remains were found along the shoreli...<a href="https://www.nbcnews.com/news/us-news/bags-human-remains-discovered-along-seattle-shore-n1231630" target="_blank">read more</a></div><br><div class="card"><a href="https://www.npr.org/2020/06/20/881148365/geoffrey-berman-u-s-attorney-who-prosecuted-trump-allies-says-he-wont-quit" target="_blank"><img src="https://media.npr.org/assets/img/2020/06/19/ap_19283671064707_wide-99b0fc312d746e07914c0fb8dd56293fe431cce4.jpg?s=1400" alt="Avatar" style="width:100%;"></a><a href="https://www.npr.org/2020/06/20/881148365/geoffrey-berman-u-s-attorney-who-prosecuted-trump-allies-says-he-wont-quit" target="_blank"><p style="font-size:30px;font-style:italic;">Geoffrey Berman, U.S. Attorney Who Prosecuted Trump Allies, Says He Won't Quit - NPR</p></a>Attorney General William Barr announced that Berma...<a href="https://www.npr.org/2020/06/20/881148365/geoffrey-berman-u-s-attorney-who-prosecuted-trump-allies-says-he-wont-quit" target="_blank">read more</a></div><br><div class="card"><a href="https://www.cnet.com/news/how-to-watch-the-2020-ring-of-fire-solar-eclipse-blot-out-most-of-sun/" target="_blank"><img src="https://cnet3.cbsistatic.com/img/ekc6FKppOxsVdrWYM92375t-eCc=/2020/06/15/c2e37b37-40a3-4a2f-aaf7-111d27d829dc/grandcanyoneclipse.jpg" alt="Avatar" style="width:100%;"></a><a href="https://www.cnet.com/news/how-to-watch-the-2020-ring-of-fire-solar-eclipse-blot-out-most-of-sun/" target="_blank"><p style="font-size:30px;font-style:italic;">'Ring of fire' solar eclipse set to blot out (most of) the sun this weekend - CNET</p></a>The full annular eclipse will be visible across pa...<a href="https://www.cnet.com/news/how-to-watch-the-2020-ring-of-fire-solar-eclipse-blot-out-most-of-sun/" target="_blank">read more</a></div><br><div class="card"><a href="https://www.engadget.com/denon-8k-receivers-starting-at-849-035401919.html" target="_blank"><img src="https://o.aolcdn.com/images/dims?resize=1200%2C630&amp;crop=1200%2C630%2C0%2C0&amp;quality=95&amp;image_uri=https%3A%2F%2Fs.yimg.com%2Fos%2Fcreatr-uploaded-images%2F2020-06%2F520a10f0-b2a9-11ea-bfe6-9eca80e72419&amp;client=amp-blogside-v2&amp;signature=8cb74e690e573e357951de16ee1ca6796b469e48" alt="Avatar" style="width:100%;"></a><a href="https://www.engadget.com/denon-8k-receivers-starting-at-849-035401919.html" target="_blank"><p style="font-size:30px;font-style:italic;">Denon 8K receivers - Engadget</p></a>Denon's 2020 X-Series receivers handle 8K video as...<a href="https://www.engadget.com/denon-8k-receivers-starting-at-849-035401919.html" target="_blank">read more</a></div><br><div class="card"><a href="https://www.youtube.com/watch?v=77VH89ZBxdQ" target="_blank"><img src="https://i.ytimg.com/vi/77VH89ZBxdQ/hqdefault.jpg" alt="Avatar" style="width:100%;"></a><a href="https://www.youtube.com/watch?v=77VH89ZBxdQ" target="_blank"><p style="font-size:30px;font-style:italic;">Robinhood to add new criteria for options trading - Yahoo Finance</p></a>Robinhood is taking actions to curb investor misun...<a href="https://www.youtube.com/watch?v=77VH89ZBxdQ" target="_blank">read more</a></div><br><div class="card"><a href="https://www.washingtonpost.com/local/juneteenth-celebrations-george-floyd-protests/2020/06/19/859ff0f4-b229-11ea-8758-bfd1d045525a_story.html" target="_blank"><img src="https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/7MH2MVFSPYI6VLG5YDPE5F3PRU.jpg&amp;w=1440" alt="Avatar" style="width:100%;"></a><a href="https://www.washingtonpost.com/local/juneteenth-celebrations-george-floyd-protests/2020/06/19/859ff0f4-b229-11ea-8758-bfd1d045525a_story.html" target="_blank"><p style="font-size:30px;font-style:italic;">Juneteenth celebrations marked by marches, protests and added significance - The Washington Post</p></a>Crowds gather across the nation in remembrance of ...<a href="https://www.washingtonpost.com/local/juneteenth-celebrations-george-floyd-protests/2020/06/19/859ff0f4-b229-11ea-8758-bfd1d045525a_story.html" target="_blank">read more</a></div><br><div class="card"><a href="https://deadline.com/2020/06/broadway-actor-nick-cordero-visits-amanda-kloots-update-1202942530/" target="_blank"><img src="https://pmcdeadline2.files.wordpress.com/2020/06/cordero.jpg?w=1024" alt="Avatar" style="width:100%;"></a><a href="https://deadline.com/2020/06/broadway-actor-nick-cordero-visits-amanda-kloots-update-1202942530/" target="_blank"><p style="font-size:30px;font-style:italic;">Broadway Actor Nick Cordero Finally Gets In-Person Visit With Wife Amanda Kloots – Update - Deadline</p></a>UPDATE, JUNE 19:&nbsp;After 79 days apart, Amanda Kloot...<a href="https://deadline.com/2020/06/broadway-actor-nick-cordero-visits-amanda-kloots-update-1202942530/" target="_blank">read more</a></div><br><div class="card"><a href="https://deadline.com/2020/06/donald-trump-twitter-facebook-toddler-video-1202964435/" target="_blank"><img src="https://pmcdeadline2.files.wordpress.com/2020/05/donald-trump-1.jpg?w=1024" alt="Avatar" style="width:100%;"></a><a href="https://deadline.com/2020/06/donald-trump-twitter-facebook-toddler-video-1202964435/" target="_blank"><p style="font-size:30px;font-style:italic;">Twitter, Facebook Take Down Doctored Toddler Video Posted By Donald Trump After Copyright Claims - Deadline</p></a>Twitter and Facebook took down a doctored video po...<a href="https://deadline.com/2020/06/donald-trump-twitter-facebook-toddler-video-1202964435/" target="_blank">read more</a></div><br><div class="card"><a href="https://decrypt.co/33080/elon-musk-invites-users-to-test-starlink-space-internet" target="_blank"><img src="https://cdn.decrypt.co/resize/1024/height/512/wp-content/uploads/2020/05/elon-musk-tech-stocks-markets-crypto-gID_2.jpg" alt="Avatar" style="width:100%;"></a><a href="https://decrypt.co/33080/elon-musk-invites-users-to-test-starlink-space-internet" target="_blank"><p style="font-size:30px;font-style:italic;">Elon Musk invites users to test Starlink space internet - Decrypt</p></a>The SpaceX CEO now has 500 satellites orbiting ear...<a href="https://decrypt.co/33080/elon-musk-invites-users-to-test-starlink-space-internet" target="_blank">read more</a></div><br><div class="card"><a href="https://www.huffpost.com/entry/tom-petty-donald-trump-rally-music-estate_n_5eefec1bc5b60f58759853f3" target="_blank"><img src="https://img.huffingtonpost.com/asset/5ef006b1250000ea2eeb3bd5.jpeg?cache=aIiO3npjxV&amp;ops=1200_630" alt="Avatar" style="width:100%;"></a><a href="https://www.huffpost.com/entry/tom-petty-donald-trump-rally-music-estate_n_5eefec1bc5b60f58759853f3" target="_blank"><p style="font-size:30px;font-style:italic;">Tom Petty's Family Demands Trump Stop Using 'I Won't Back Down' In 'Campaign Of Hate' - HuffPost</p></a>“We believe in America and we believe in democracy...<a href="https://www.huffpost.com/entry/tom-petty-donald-trump-rally-music-estate_n_5eefec1bc5b60f58759853f3" target="_blank">read more</a></div><br></div>
+		<div class="card"><a href="https://www.pcworld.com/article/3563417/asus-rog-zephyrus-duo-15-gx550-review-two-screens-and-a-whole-lot-of-speed.html" target="_blank"><img src="https://images.idgesg.net/images/article/2020/06/zephyrus_2-100849429-large.3x2.jpg" alt="Avatar" style="width:100%;"></a><a href="https://www.pcworld.com/article/3563417/asus-rog-zephyrus-duo-15-gx550-review-two-screens-and-a-whole-lot-of-speed.html" target="_blank"><p style="font-style:italic;">Asus ROG Zephyrus Duo 15 GX550 review: Two screens and a whole lot of speed - PCWorld</p></a>The Asus ROG Zephyrus Duo 15 GX550 is a dual-scree...<a href="https://www.pcworld.com/article/3563417/asus-rog-zephyrus-duo-15-gx550-review-two-screens-and-a-whole-lot-of-speed.html" target="_blank">read more</a></div><br><div class="card"><a href="https://www.billboard.com/articles/columns/pop/9406412/global-goal-unite-for-our-future-concert-lineup" target="_blank"><img src="https://static.billboard.com/files/2020/05/Miley-Cyrus-2020-Fashion-ndk-Billboard-1548-1588971221-1024x677.jpg" alt="Avatar" style="width:100%;"></a><a href="https://www.billboard.com/articles/columns/pop/9406412/global-goal-unite-for-our-future-concert-lineup" target="_blank"><p style="font-style:italic;">Miley Cyrus, Shakira, Justin Bieber &amp; More to Perform at 'Global Goal: Unite for Our Future' Concert - Billboard</p></a>undefined<a href="https://www.billboard.com/articles/columns/pop/9406412/global-goal-unite-for-our-future-concert-lineup" target="_blank">read more</a></div><br><div class="card"><a href="https://www.nbcnews.com/news/us-news/bags-human-remains-discovered-along-seattle-shore-n1231630" target="_blank"><img src="https://media4.s-nbcnews.com/j/newscms/2019_01/2705191/nbc-social-default_b6fa4fef0d31ca7e8bc7ff6d117ca9f4.nbcnews-fp-1200-630.png" alt="Avatar" style="width:100%;"></a><a href="https://www.nbcnews.com/news/us-news/bags-human-remains-discovered-along-seattle-shore-n1231630" target="_blank"><p style="font-style:italic;">Bags with human remains discovered along Seattle shore - NBC News</p></a>Bags of human remains were found along the shoreli...<a href="https://www.nbcnews.com/news/us-news/bags-human-remains-discovered-along-seattle-shore-n1231630" target="_blank">read more</a></div><br><div class="card"><a href="https://www.npr.org/2020/06/20/881148365/geoffrey-berman-u-s-attorney-who-prosecuted-trump-allies-says-he-wont-quit" target="_blank"><img src="https://media.npr.org/assets/img/2020/06/19/ap_19283671064707_wide-99b0fc312d746e07914c0fb8dd56293fe431cce4.jpg?s=1400" alt="Avatar" style="width:100%;"></a><a href="https://www.npr.org/2020/06/20/881148365/geoffrey-berman-u-s-attorney-who-prosecuted-trump-allies-says-he-wont-quit" target="_blank"><p style="font-style:italic;">Geoffrey Berman, U.S. Attorney Who Prosecuted Trump Allies, Says He Won't Quit - NPR</p></a>Attorney General William Barr announced that Berma...<a href="https://www.npr.org/2020/06/20/881148365/geoffrey-berman-u-s-attorney-who-prosecuted-trump-allies-says-he-wont-quit" target="_blank">read more</a></div><br><div class="card"><a href="https://www.cnet.com/news/how-to-watch-the-2020-ring-of-fire-solar-eclipse-blot-out-most-of-sun/" target="_blank"><img src="https://cnet3.cbsistatic.com/img/ekc6FKppOxsVdrWYM92375t-eCc=/2020/06/15/c2e37b37-40a3-4a2f-aaf7-111d27d829dc/grandcanyoneclipse.jpg" alt="Avatar" style="width:100%;"></a><a href="https://www.cnet.com/news/how-to-watch-the-2020-ring-of-fire-solar-eclipse-blot-out-most-of-sun/" target="_blank"><p style="font-style:italic;">'Ring of fire' solar eclipse set to blot out (most of) the sun this weekend - CNET</p></a>The full annular eclipse will be visible across pa...<a href="https://www.cnet.com/news/how-to-watch-the-2020-ring-of-fire-solar-eclipse-blot-out-most-of-sun/" target="_blank">read more</a></div><br><div class="card"><a href="https://www.engadget.com/denon-8k-receivers-starting-at-849-035401919.html" target="_blank"><img src="https://o.aolcdn.com/images/dims?resize=1200%2C630&amp;crop=1200%2C630%2C0%2C0&amp;quality=95&amp;image_uri=https%3A%2F%2Fs.yimg.com%2Fos%2Fcreatr-uploaded-images%2F2020-06%2F520a10f0-b2a9-11ea-bfe6-9eca80e72419&amp;client=amp-blogside-v2&amp;signature=8cb74e690e573e357951de16ee1ca6796b469e48" alt="Avatar" style="width:100%;"></a><a href="https://www.engadget.com/denon-8k-receivers-starting-at-849-035401919.html" target="_blank"><p style="font-style:italic;">Denon 8K receivers - Engadget</p></a>Denon's 2020 X-Series receivers handle 8K video as...<a href="https://www.engadget.com/denon-8k-receivers-starting-at-849-035401919.html" target="_blank">read more</a></div><br><div class="card"><a href="https://www.youtube.com/watch?v=77VH89ZBxdQ" target="_blank"><img src="https://i.ytimg.com/vi/77VH89ZBxdQ/hqdefault.jpg" alt="Avatar" style="width:100%;"></a><a href="https://www.youtube.com/watch?v=77VH89ZBxdQ" target="_blank"><p style="font-style:italic;">Robinhood to add new criteria for options trading - Yahoo Finance</p></a>Robinhood is taking actions to curb investor misun...<a href="https://www.youtube.com/watch?v=77VH89ZBxdQ" target="_blank">read more</a></div><br><div class="card"><a href="https://www.washingtonpost.com/local/juneteenth-celebrations-george-floyd-protests/2020/06/19/859ff0f4-b229-11ea-8758-bfd1d045525a_story.html" target="_blank"><img src="https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/7MH2MVFSPYI6VLG5YDPE5F3PRU.jpg&amp;w=1440" alt="Avatar" style="width:100%;"></a><a href="https://www.washingtonpost.com/local/juneteenth-celebrations-george-floyd-protests/2020/06/19/859ff0f4-b229-11ea-8758-bfd1d045525a_story.html" target="_blank"><p style="font-style:italic;">Juneteenth celebrations marked by marches, protests and added significance - The Washington Post</p></a>Crowds gather across the nation in remembrance of ...<a href="https://www.washingtonpost.com/local/juneteenth-celebrations-george-floyd-protests/2020/06/19/859ff0f4-b229-11ea-8758-bfd1d045525a_story.html" target="_blank">read more</a></div><br><div class="card"><a href="https://deadline.com/2020/06/broadway-actor-nick-cordero-visits-amanda-kloots-update-1202942530/" target="_blank"><img src="https://pmcdeadline2.files.wordpress.com/2020/06/cordero.jpg?w=1024" alt="Avatar" style="width:100%;"></a><a href="https://deadline.com/2020/06/broadway-actor-nick-cordero-visits-amanda-kloots-update-1202942530/" target="_blank"><p style="font-style:italic;">Broadway Actor Nick Cordero Finally Gets In-Person Visit With Wife Amanda Kloots – Update - Deadline</p></a>UPDATE, JUNE 19:&nbsp;After 79 days apart, Amanda Kloot...<a href="https://deadline.com/2020/06/broadway-actor-nick-cordero-visits-amanda-kloots-update-1202942530/" target="_blank">read more</a></div><br><div class="card"><a href="https://deadline.com/2020/06/donald-trump-twitter-facebook-toddler-video-1202964435/" target="_blank"><img src="https://pmcdeadline2.files.wordpress.com/2020/05/donald-trump-1.jpg?w=1024" alt="Avatar" style="width:100%;"></a><a href="https://deadline.com/2020/06/donald-trump-twitter-facebook-toddler-video-1202964435/" target="_blank"><p style="font-style:italic;">Twitter, Facebook Take Down Doctored Toddler Video Posted By Donald Trump After Copyright Claims - Deadline</p></a>Twitter and Facebook took down a doctored video po...<a href="https://deadline.com/2020/06/donald-trump-twitter-facebook-toddler-video-1202964435/" target="_blank">read more</a></div><br><div class="card"><a href="https://decrypt.co/33080/elon-musk-invites-users-to-test-starlink-space-internet" target="_blank"><img src="https://cdn.decrypt.co/resize/1024/height/512/wp-content/uploads/2020/05/elon-musk-tech-stocks-markets-crypto-gID_2.jpg" alt="Avatar" style="width:100%;"></a><a href="https://decrypt.co/33080/elon-musk-invites-users-to-test-starlink-space-internet" target="_blank"><p style="font-style:italic;">Elon Musk invites users to test Starlink space internet - Decrypt</p></a>The SpaceX CEO now has 500 satellites orbiting ear...<a href="https://decrypt.co/33080/elon-musk-invites-users-to-test-starlink-space-internet" target="_blank">read more</a></div><br><div class="card"><a href="https://www.huffpost.com/entry/tom-petty-donald-trump-rally-music-estate_n_5eefec1bc5b60f58759853f3" target="_blank"><img src="https://img.huffingtonpost.com/asset/5ef006b1250000ea2eeb3bd5.jpeg?cache=aIiO3npjxV&amp;ops=1200_630" alt="Avatar" style="width:100%;"></a><a href="https://www.huffpost.com/entry/tom-petty-donald-trump-rally-music-estate_n_5eefec1bc5b60f58759853f3" target="_blank"><p style="font-style:italic;">Tom Petty's Family Demands Trump Stop Using 'I Won't Back Down' In 'Campaign Of Hate' - HuffPost</p></a>“We believe in America and we believe in democracy...<a href="https://www.huffpost.com/entry/tom-petty-donald-trump-rally-music-estate_n_5eefec1bc5b60f58759853f3" target="_blank">read more</a></div><br></div>
 		
 			
 	</body>
