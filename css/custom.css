@@ -88,12 +88,9 @@ position: relative;
   font-weight: 200;
   font-family: 'Arvo', serif;
   color:black;
+  letter-spacing: 15px;
 }
-#tagline{
-  font-size:20px;
-  background-color: rgb(255,200,30);
-  color: white;
-}
+
 
 .btnX{
   display: inline-block;
