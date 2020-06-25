@@ -56,4 +56,16 @@ float:left;
     display: block;
     text-align: left;
   }
+
+  .topnav.sticky.responsive {position: sticky;}
+  .topnav.sticky.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.sticky.responsive a {
+    float: none;
+    display:block;
+    text-align: left;
+  }
 }
